@@ -4,25 +4,24 @@ import './App.css';
 
 function App() {
 
-  const [message, setMessage] = useState(''); // Inicializa como string vazia
+  const [message, setMessage] = useState(''); 
 
   useEffect(() => {
-    console.log('Fazendo requisição para o backend...');
     axios.get('http://localhost:3001/')
       .then(response => {
-        console.log('Resposta recebida:', response.data);
-        setMessage(response.data); // Atualiza o estado com a mensagem do backend
+        setMessage(response.data); 
       })
       .catch(error => {
         console.error('Erro ao fazer requisição:', error);
+        setMessage('Server not running');
       });
-  }, []); // Executa apenas uma vez após o primeiro render
+  }, []); 
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Hello, World!</h1>
-        <h1>{message}</h1> {/* Exibe a mensagem recebida do backend */}
+        <h1>{message}</h1>
       </header>
     </div>
   );
