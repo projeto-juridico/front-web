@@ -5,9 +5,11 @@ import './App.css';
 function App() {
 
   const [message, setMessage] = useState(''); 
-
+  const apiUrl = process.env.REACT_APP_API_URL;
+  console.log('API URL:', apiUrl); // Adicione isso para verificar se a URL está correta
+  
   useEffect(() => {
-    axios.get('http://localhost:3001/')
+    axios.get(apiUrl)
       .then(response => {
         setMessage(response.data); 
       })
@@ -15,7 +17,7 @@ function App() {
         console.error('Erro ao fazer requisição:', error);
         setMessage('Server not running');
       });
-  }, []); 
+  }, [apiUrl]); 
 
   return (
     <div className="App">
