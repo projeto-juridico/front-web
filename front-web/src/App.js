@@ -9,7 +9,7 @@ function App() {
   console.log('API URL:', apiUrl); // Adicione isso para verificar se a URL está correta
   
   useEffect(() => {
-    axios.get(apiUrl)
+    axios.get(`${apiUrl}/hello`)
       .then(response => {
         setMessage(response.data); 
       })
