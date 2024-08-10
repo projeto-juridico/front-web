@@ -6,12 +6,12 @@ function App() {
 
   const [message, setMessage] = useState(''); 
   const apiUrl = process.env.REACT_APP_API_URL;
-  console.log('API URL:', apiUrl); // Adicione isso para verificar se a URL está correta
+  console.log('API URL:', apiUrl); 
   
   useEffect(() => {
     axios.get(`${apiUrl}/hello`)
       .then(response => {
-        setMessage(response.data); 
+        setMessage(response.data.message); 
       })
       .catch(error => {
         console.error('Erro ao fazer requisição:', error);
