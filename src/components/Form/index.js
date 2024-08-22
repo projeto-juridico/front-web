@@ -4,14 +4,12 @@ import DropdownInput from '../DropdownInput';
 import Button from '../Button';
 import { useState } from 'react'
 
-
-
 const Form = (props) => {
 
     const [name, setName] = useState('')
     const [role, setRole] = useState('')
     const [image, setImage] = useState('')
-    const [team, setTeam] = useState('Programação')
+    const [team, setTeam] = useState('')
 
     const onSave = (event) => {
         event.preventDefault()
@@ -21,6 +19,10 @@ const Form = (props) => {
             image: image,
             team: team
         })
+        setName('')
+        setRole('')
+        setImage('')
+        setTeam('')
     }
 
     return (
