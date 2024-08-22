@@ -8,7 +8,7 @@ function App() {
 
   const teams = [
     {
-      name: 'Programação 22',
+      name: 'Programação 33',
       primaryColor: '#57c278',
       secondaryColor: '#d9f7e9',
     },
