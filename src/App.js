@@ -4,7 +4,7 @@ import Login from './components/Login/Login';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <Login /> {/* Renderização do componente de Login */}
     </div>
   );
