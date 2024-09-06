@@ -1,0 +1,18 @@
+.header-container {
+    display: flex;
+    border-bottom: 1px solid var(--black85);
+}
+
+.header-logo {
+    margin: 20px 20px 20px 30px;
+}
+
+.header-title {
+    margin: 20px 20px 20px 0px;
+    color: var(--black85);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    align-content: center;
+    font-style: italic;
+    white-space: nowrap;
+}

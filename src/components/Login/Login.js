@@ -16,29 +16,33 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <h2 className="login-title">Login</h2>
-      <p className="login-subtitle">
-        Novo por aqui? <a href="#">Crie uma conta</a>
-      </p>
-      <form onSubmit={handleLogin}>
-        <Input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <Input
-          type="password"
-          placeholder="Senha"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <a href="#" className="forgot-password">Esqueci minha senha</a>
-        <Button text="Entrar" />
-      </form>
+    <div className>
+      <div className="login-container">
+        <h2 className="login-title">Login</h2>
+        <p className="login-subtitle">
+          Novo por aqui? <a href="#">Crie uma conta</a>
+        </p>
+        <form onSubmit={handleLogin}>
+          <Input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <Input
+            type="password"
+            placeholder="Senha"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <a href="#" className="forgot-password">Esqueci minha senha</a>
+          <Button text="Entrar" />
+        </form>
+      </div>
     </div>
   );
 };
 
 export default Login;
+
+

@@ -32,3 +32,8 @@
     padding: 20px;
   }
   
+  :root {
+    --greenBrand: #85c99b;
+    --black85: #768a98;
+  }
+  
