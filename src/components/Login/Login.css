@@ -39,12 +39,11 @@
   text-decoration: underline;
 }
 
+
 .forgot-password {
-  display: block;
   text-align: left;
   font-size: 14px;
   color: #768a98;
-  margin-top: 10px;
   font-family: 'Poppins', sans-serif;
   text-decoration: underline;
   text-underline-offset: 4px;
