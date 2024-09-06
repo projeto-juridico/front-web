@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app-container">
       <Header title='Petição Descomplicada'></Header>
-      <div className='login-wrapper'>
+      <div className='page-container'>
         <Login className='login-form' />
       </div>
     </div>
