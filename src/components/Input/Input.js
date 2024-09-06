@@ -4,13 +4,15 @@ import './Input.css'; // Estilos específicos para o input
 
 const Input = ({ type, placeholder, value, onChange }) => {
   return (
-    <input
+    <div>
+      <h1 className='input-field-placeholder'>{placeholder}</h1>
+      <input
       type={type}
-      placeholder={placeholder}
       value={value}
       onChange={onChange}
       className="input-field"
     />
+    </div>
   );
 };
 

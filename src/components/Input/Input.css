@@ -9,9 +9,17 @@
     font-family: 'Poppins', sans-serif;
     color: #768a98;
   }
+
+  .input-field-placeholder {
+    font-size: 14px;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+    color: #768a98;
+    margin-bottom: 4px;
+  }
   
   .input-field:focus {
-    border-color: #6ab04c;
+    border-color: #85c99b;
     outline: none;
     box-shadow: 0 0 5px rgba(106, 176, 76, 0.5);
   }
