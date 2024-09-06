@@ -18,4 +18,5 @@ header {
   flex: 1; /* Faz o login ocupar o espaço restante da tela */
   margin-top: 143px;
   margin-bottom: 143px;
+  overflow: hidden;
 }
